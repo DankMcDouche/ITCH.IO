@@ -5,13 +5,16 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public SceneMNGR SceneManager;
-
+    public WeaponScript Weapon;
+    
     public Rigidbody rb;
+    public GameObject AttackBOX;
 
     public int Health;
     public float BaseSpeed;
     public float Speed;
     public bool IsGrounded;
+    private bool HasAttacked;
 
     void Start()
     {
@@ -34,12 +37,18 @@ public class PlayerScript : MonoBehaviour
 
     public void Combat()
     {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Weapon.WeaponMode = !Weapon.WeaponMode;
+        }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             //Attack
+            print("Attacking");
+            HasAttacked = true;
+            StartCoroutine(AttackTimer());
         }
     }
-
     public void Movement()
     {
         if (transform.position.y <= -2.8f)
@@ -52,7 +61,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (!IsGrounded)
         {
-            Speed = 2;
+            Speed = 3;
         }
         else
         {
@@ -85,6 +94,16 @@ public class PlayerScript : MonoBehaviour
             Destroy(collision.gameObject);
             Health--;
             print("OOF FRUIT");
+        }
+    }
+    IEnumerator AttackTimer()
+    {
+        while (HasAttacked)
+        {
+            AttackBOX.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            AttackBOX.SetActive(false);
+            HasAttacked = false;
         }
     }
 }
