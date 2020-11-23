@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public SceneMNGR SceneManager;
+
     public Rigidbody rb;
 
+    public int Health;
     public float BaseSpeed;
     public float Speed;
     public bool IsGrounded;
@@ -21,6 +24,13 @@ public class PlayerScript : MonoBehaviour
         Combat();
     }
 
+    private void Update()
+    {
+        if (Health <= 0)
+        {
+            SceneManager.StartGameOverScene();
+        }
+    }
 
     public void Combat()
     {
@@ -59,6 +69,22 @@ public class PlayerScript : MonoBehaviour
         if (IsGrounded == true && Input.GetKey(KeyCode.Space))
         {
             rb.velocity = new Vector3(0, 7, 0);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bomb")
+        {
+            Destroy(collision.gameObject);
+            Health -= 2;
+            print("OOF BOMB");
+        }
+        if (collision.gameObject.tag == "Fruit")
+        {
+            Destroy(collision.gameObject);
+            Health--;
+            print("OOF FRUIT");
         }
     }
 }

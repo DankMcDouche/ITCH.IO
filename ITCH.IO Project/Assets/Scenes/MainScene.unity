@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 388830780}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -410,9 +410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75dd166323cdbc4d85b174566d043f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneManager: {fileID: 7275624634401652757, guid: d6fbc5c04835dad4f928efa4bcb0b40d, type: 3}
   rb: {fileID: 0}
+  Health: 4
   BaseSpeed: 3
-  Speed: 1
+  Speed: 2
   IsGrounded: 0
 --- !u!1 &2098878366
 GameObject:
@@ -672,6 +674,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8344783110417683857, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
+      propertyPath: DropTimer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344783110417683857, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
+      propertyPath: BombList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344783110417683857, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
+      propertyPath: FruitList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344783110417683857, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
+      propertyPath: BombList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1244390803157103130, guid: 2c8289b96fb358b4ebf7d7bf2ab3f4aa, type: 3}
+    - target: {fileID: 8344783110417683857, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
+      propertyPath: FruitList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1244390803157103130, guid: a549a1d00f61a4a4ba0a152e266b4fe7, type: 3}
+    - target: {fileID: 8344783110417683857, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
+      propertyPath: FruitList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1244390803157103130, guid: 2c8289b96fb358b4ebf7d7bf2ab3f4aa, type: 3}
     - target: {fileID: 8344783110417683867, guid: a4e1baf18750d184d9bdb8fb8e80f551, type: 3}
       propertyPath: m_Name
       value: BananaPlane
