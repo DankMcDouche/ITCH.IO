@@ -48,5 +48,6 @@ public class FoodShipAI : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Direction = !Direction;
+        transform.Rotate(0,180,0);
     }
 }
