@@ -13,6 +13,7 @@ public class FoodShipAI : MonoBehaviour
     public float Speed;
     public float DropTimer;
     private float Timer;
+    public float DropOffsetY;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class FoodShipAI : MonoBehaviour
 
         if (Timer >= DropTimer)
         {
-            BombSpawnPosition = new Vector3(transform.position.x, transform.position.y - 1, 0);
+            BombSpawnPosition = new Vector3(transform.position.x, transform.position.y - DropOffsetY, 0);
             Instantiate(FruitList[Random.Range(0, FruitList.Count)], BombSpawnPosition, Quaternion.identity);
 
             Timer = 0;
