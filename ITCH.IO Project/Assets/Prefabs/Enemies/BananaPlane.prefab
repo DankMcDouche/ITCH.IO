@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8344783110417683867}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 6.8, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
@@ -110,9 +110,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24fa17289826674a9fc4a023964d1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameManager: {fileID: 0}
   rb: {fileID: 0}
+  FruitList:
+  - {fileID: 6909736907879911791, guid: fb5468a5f9605df49b1ef61726b55ddc, type: 3}
+  - {fileID: 8281285170168931655, guid: f207a08741155d3498a59c98249ec278, type: 3}
+  - {fileID: 2110944729495979228, guid: 5f656b2a43d31e5458903734ef0664ee, type: 3}
+  - {fileID: 6599668105488015940, guid: 818b6c0e5ef8a7947bbd594b0a174a6a, type: 3}
+  - {fileID: 6957220030300925457, guid: dbf71d7bac2a8334cb878a316eef1c5d, type: 3}
+  - {fileID: 6774329689464381180, guid: 197d5cfd264792f4da5c0e9b935cb46f, type: 3}
+  - {fileID: 9115889934415776742, guid: a63ab8b99cdc156428d8af4085b5c8d8, type: 3}
+  - {fileID: 2757104935814824013, guid: d25b8ec7f8dbb2d45a75c76447dae1a1, type: 3}
+  - {fileID: 3588889206893264329, guid: b7752b5fd4e6b694cb76ffa7c030aa27, type: 3}
+  - {fileID: 2539565310757833603, guid: f1cbd7d3aed42f845bafdb56f32c70dd, type: 3}
   Direction: 0
   Speed: 2
+  DropTimer: 3
+  DropOffsetY: 2.5
 --- !u!54 &8344783110417683870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,5 +141,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 56
   m_CollisionDetection: 0

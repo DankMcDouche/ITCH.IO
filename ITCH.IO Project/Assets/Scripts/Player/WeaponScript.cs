@@ -5,12 +5,14 @@ using UnityEngine;
 public class WeaponScript : MonoBehaviour
 {
     public PlayerScript Player;
+    public GameManagerScript GameManager;
     public bool WeaponMode;
     private Material Clr;
 
     void Start()
     {
         Clr = GetComponent<Renderer>().material;
+        GameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
     }
 
     void Update()
@@ -25,31 +27,33 @@ public class WeaponScript : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] void OnCollisionEnter(Collision collision)
     {
         if (WeaponMode)
         {
-            if (other.gameObject.tag == "Fruit")
+            if (collision.gameObject.CompareTag("Fruit"))
             {
-                Destroy(other);
-                //Score ++
+                print("Weapon Collide Fruit Correctly");
+                GameManager.CalculateScore(100);
             }
-            else if (other.gameObject.tag == "Bomb")
+            else if (collision.gameObject.CompareTag("Bomb"))
             {
-                Destroy(other);
+                print("Weapon Wrongly Collides Bomb");
                 Player.Health -= 2;
             }
+            Destroy(collision.gameObject);
         }
         else
         {
-            if (other.gameObject.tag == "Fruit")
+            if (collision.gameObject.CompareTag("Fruit"))
             {
-                Destroy(other);
-                //No Score, screen splatter
+                print("Weapon Wrongly Collides Fruit");
+                Destroy(collision.gameObject);
             }
-            else if (other.gameObject.tag == "Bomb")
+            else if (collision.gameObject.CompareTag("Bomb"))
             {
-                //Flies back up
+                collision.gameObject.GetComponent<Rigidbody>().AddForce(0,1000,0);
+                print("Weapon Collides Bomb Correctly");
             }
         }
     }

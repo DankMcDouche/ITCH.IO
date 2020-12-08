@@ -3,8 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BombScript
     - FoodShipAI
+    - GameManagerScript
     - PlayerScript
     - SceneMNGR
+    - WeaponScript
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -45,23 +47,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12056}
     - Class: 114
-      Script: {instanceID: 12488}
+      Script: {instanceID: 12498}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13204}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13482}
+      Script: {instanceID: 13492}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 13878}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -100,29 +102,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12056}
     - Class: 114
-      Script: {instanceID: 12488}
+      Script: {instanceID: 12498}
     - Class: 114
-      Script: {instanceID: 12520}
+      Script: {instanceID: 12530}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13204}
     - Class: 114
-      Script: {instanceID: 13210}
+      Script: {instanceID: 13220}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13482}
+      Script: {instanceID: 13492}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 13664}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 13878}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,14 +171,32 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12680}
+      Script: {instanceID: 12138}
     - Class: 114
-      Script: {instanceID: 13778}
+      Script: {instanceID: 12454}
+    - Class: 114
+      Script: {instanceID: 12498}
+    - Class: 114
+      Script: {instanceID: 12690}
+    - Class: 114
+      Script: {instanceID: 13204}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 13492}
+    - Class: 114
+      Script: {instanceID: 13788}
+    - Class: 114
+      Script: {instanceID: 13878}
+    - Class: 114
+      Script: {instanceID: 23606}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -185,6 +205,12 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -293,7 +319,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: e8b805bc0654c9ca19bc8edefc6952da
+      Hash: c95409a80202914988e204740a12ca21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FoodShipAI
@@ -365,7 +391,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 20b67b86db5a3556b9a7c5fae66f4287
+      Hash: 7ece4f1688c65a7c90617605af66198c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponScript
@@ -639,9 +665,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 9d561bfd81848c21b9c3f5f20fb3b15d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManagerScript
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: D:/School projects/Chef Kong/ITCH.IO Project.exe
+  playerPath: D:/School projects/Chef's last stand/ITCH.IO Project.exe
