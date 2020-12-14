@@ -9,6 +9,8 @@ public class PlayerScript : MonoBehaviour
     
     public Rigidbody rb;
     public GameObject AttackBOX;
+    public GameObject Knife;
+    public GameObject Bat;
 
     public int Health;
     public float BaseSpeed;
@@ -40,6 +42,16 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             Weapon.WeaponMode = !Weapon.WeaponMode;
+        }
+        if (Weapon.WeaponMode)
+        {
+            Knife.SetActive(true);
+            Bat.SetActive(false);
+        }
+        else
+        {
+            Bat.SetActive(true);
+            Knife.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {

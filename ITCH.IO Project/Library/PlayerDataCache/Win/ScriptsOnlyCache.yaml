@@ -47,23 +47,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 11840}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 12056}
+      Script: {instanceID: 12058}
     - Class: 114
-      Script: {instanceID: 12498}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12960}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -102,29 +102,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 11840}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 12056}
+      Script: {instanceID: 12058}
     - Class: 114
-      Script: {instanceID: 12498}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 12530}
+      Script: {instanceID: 12532}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12960}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13220}
+      Script: {instanceID: 13222}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 13664}
+      Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -171,29 +171,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 11840}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 12138}
+      Script: {instanceID: 12140}
     - Class: 114
-      Script: {instanceID: 12454}
+      Script: {instanceID: 12456}
     - Class: 114
-      Script: {instanceID: 12498}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13492}
+      Script: {instanceID: 13494}
     - Class: 114
-      Script: {instanceID: 13788}
+      Script: {instanceID: 13790}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13852}
     - Class: 114
-      Script: {instanceID: 23606}
+      Script: {instanceID: 13882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -427,7 +427,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 62ada8e5abfd8fea561d604837c20612
+      Hash: eca2646196f2a048fcdcf2d4f2068e53
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerScript
@@ -613,6 +613,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 9d561bfd81848c21b9c3f5f20fb3b15d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManagerScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
@@ -665,15 +671,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 9d561bfd81848c21b9c3f5f20fb3b15d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManagerScript
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: D:/School projects/Chef's last stand/ITCH.IO Project.exe
+  playerPath: D:/School projects/Chef's last stand/Chef's Last Stand.exe
