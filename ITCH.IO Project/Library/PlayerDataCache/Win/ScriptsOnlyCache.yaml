@@ -4,8 +4,10 @@ ScriptsOnlyBuild:
     - BombScript
     - FoodShipAI
     - GameManagerScript
+    - PlayerHealthScript
     - PlayerScript
     - SceneMNGR
+    - Scoremanager
     - WeaponScript
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -47,23 +49,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11828}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12038}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 12488}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13194}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13416}
     - Class: 114
-      Script: {instanceID: 13494}
+      Script: {instanceID: 13482}
     - Class: 114
-      Script: {instanceID: 13882}
+      Script: {instanceID: 13870}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -104,29 +106,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11828}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12038}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 12488}
     - Class: 114
-      Script: {instanceID: 12532}
+      Script: {instanceID: 12520}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13194}
     - Class: 114
-      Script: {instanceID: 13222}
+      Script: {instanceID: 13210}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13416}
     - Class: 114
-      Script: {instanceID: 13494}
+      Script: {instanceID: 13482}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 13882}
+      Script: {instanceID: 13870}
+    - Class: 114
+      Script: {instanceID: 22664}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,29 +181,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11828}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 12128}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 12488}
     - Class: 114
-      Script: {instanceID: 12692}
+      Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13194}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13416}
     - Class: 114
-      Script: {instanceID: 13494}
+      Script: {instanceID: 13482}
     - Class: 114
-      Script: {instanceID: 13790}
+      Script: {instanceID: 13778}
     - Class: 114
-      Script: {instanceID: 13852}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 13882}
+      Script: {instanceID: 13870}
+    - Class: 114
+      Script: {instanceID: 16274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -211,6 +217,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -401,7 +411,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 7ece4f1688c65a7c90617605af66198c
+      Hash: 8d0210a1173b187214722e9668af3164
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponScript
@@ -437,7 +447,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: eca2646196f2a048fcdcf2d4f2068e53
+      Hash: 5bfd96bd469ad1d9ab1dcd159e8be55f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerScript
@@ -587,7 +597,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: bdd73cca633ff68d10f7244ea060d363
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BombScript
@@ -623,7 +633,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 9d561bfd81848c21b9c3f5f20fb3b15d
+      Hash: e99709bb064e389a6c885e0e3c620258
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManagerScript
@@ -681,6 +691,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 162004ffcc4b8ab71c3f0314c1a85538
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHealthScript
+  - hash:
+      serializedVersion: 2
+      Hash: 323ab1a8e33372e9b647a2671745242e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scoremanager
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

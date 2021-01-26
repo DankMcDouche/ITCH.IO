@@ -11,7 +11,7 @@ public class GameManagerScript : MonoBehaviour
 
     public Vector3 ShipSpawn;
 
-    int DisplayScore;
+    public int DisplayScore;
 
     private void Start()
     {
@@ -19,6 +19,7 @@ public class GameManagerScript : MonoBehaviour
         EnemyShip.transform.Rotate(0,0,90);
         SpawnShip();
         ScoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
+        DisplayScore = 0;
         CalculateScore(0);
     }
 
@@ -30,7 +31,6 @@ public class GameManagerScript : MonoBehaviour
     public void CalculateScore(int calculatedScore)
     {
         DisplayScore += calculatedScore;
-        print(DisplayScore);
-        ScoreText.text = "Score: " + DisplayScore;
+        ScoreText.text = DisplayScore.ToString();
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Fruit
   - Floor
   - PlayerWeapon
+  - EndScoreTag
+  - AirPlane
   layers:
   - Default
   - TransparentFX

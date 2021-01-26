@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public SceneMNGR SceneManager;
+    PlayerHealthScript HealthScript;
     public WeaponScript Weapon;
     
     public Rigidbody rb;
@@ -12,7 +12,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject Knife;
     public GameObject Bat;
 
-    public int Health;
+    public float Health;
     public float BaseSpeed;
     public float Speed;
     public bool IsGrounded;
@@ -21,20 +21,13 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        HealthScript = FindObjectOfType<PlayerHealthScript>();
     }
     
     void FixedUpdate()
     {
         Movement();
         Combat();
-    }
-
-    private void Update()
-    {
-        if (Health <= 0)
-        {
-            SceneManager.StartGameOverScene();
-        }
     }
 
     public void Combat()
@@ -97,15 +90,12 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bomb")
         {
-            Destroy(collision.gameObject);
-            Health -= 2;
-            print("OOF BOMB");
+            HealthScript.TakeDamage(50);
         }
         if (collision.gameObject.tag == "Fruit")
         {
             Destroy(collision.gameObject);
-            Health--;
-            print("OOF FRUIT");
+            HealthScript.TakeDamage(25);
         }
     }
     IEnumerator AttackTimer()

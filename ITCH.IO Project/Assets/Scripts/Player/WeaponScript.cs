@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WeaponScript : MonoBehaviour
 {
-    public PlayerScript Player;
+    public PlayerHealthScript PHealth;
+    public BombScript bombScript;
     public GameManagerScript GameManager;
     public bool WeaponMode;
     private Material Clr;
@@ -12,6 +13,7 @@ public class WeaponScript : MonoBehaviour
     void Start()
     {
         Clr = GetComponent<Renderer>().material;
+        PHealth = FindObjectOfType<PlayerHealthScript>();
         GameManager = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
     }
 
@@ -33,27 +35,25 @@ public class WeaponScript : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Fruit"))
             {
-                print("Weapon Collide Fruit Correctly");
                 GameManager.CalculateScore(100);
+                Destroy(collision.gameObject);
             }
             else if (collision.gameObject.CompareTag("Bomb"))
             {
-                print("Weapon Wrongly Collides Bomb");
-                Player.Health -= 2;
+                bombScript = collision.gameObject.GetComponent<BombScript>();
+                bombScript.Explode();
+                PHealth.TakeDamage(50);
             }
-            Destroy(collision.gameObject);
         }
         else
         {
             if (collision.gameObject.CompareTag("Fruit"))
             {
-                print("Weapon Wrongly Collides Fruit");
                 Destroy(collision.gameObject);
             }
             else if (collision.gameObject.CompareTag("Bomb"))
             {
                 collision.gameObject.GetComponent<Rigidbody>().AddForce(0,1000,0);
-                print("Weapon Collides Bomb Correctly");
             }
         }
     }

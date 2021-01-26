@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2757104935814824013}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0766335, y: 1.5731468, z: 3.2379599}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 3.0766335, y: 1.5487, z: 3.2379599}
+  m_LocalScale: {x: 10, y: 9.703778, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5760c69e5c5bd2e47a46ac9986640510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Particle_Explosion: {fileID: 1240501762015824502, guid: 3d54867a315916641b7cd2c929dcf55c, type: 3}
 --- !u!135 &-1009642741622484310
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -123,5 +124,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.08254772
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.07334535
+  m_Center: {x: 0.0038489103, y: -0.013449681, z: 0}
